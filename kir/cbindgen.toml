@@ -1,0 +1,12 @@
+language = "C"
+
+include_guard = "KIR"
+
+style = "both"
+
+[export]
+include = []
+
+[parse]
+parse_deps = true
+clean = true
