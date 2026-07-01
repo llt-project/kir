@@ -1,4 +1,5 @@
 use std::collections::HashMap;
+use crate::decl::Module;
 
 #[repr(C)]
 pub struct HProject {
@@ -6,5 +7,6 @@ pub struct HProject {
 }
 
 pub struct Project {
-    pub unobfuscated_names: HashMap<String, bool>,
+    pub mods: Vec<Module>,
+    pub unobfuscated_names: HashMap<String, bool>, // мапа для хранения имен, которые не должны быть обфусцированы
 }
