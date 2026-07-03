@@ -39,7 +39,6 @@ pub extern "C" fn project_new(s: *const *const c_char, len: usize) -> HProject {
     }
 
     let project: Box<Project> = Box::new(Project {
-        mods: Vec::new(),
         unobfuscated_names: map,
     });
 
